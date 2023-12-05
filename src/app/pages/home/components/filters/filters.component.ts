@@ -2,16 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
-  template: `
-    <p>
-      filters works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: 'filters.component.html' 
 })
 export class FiltersComponent implements OnInit {
 
+  categories = ['shoes','sports'];
   constructor() { }
 
   ngOnInit(): void {
