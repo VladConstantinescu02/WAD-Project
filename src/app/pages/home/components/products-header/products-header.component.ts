@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: 'products-header.component.html' 
 })
 export class ProductsHeaderComponent implements OnInit {
-  @Output() columnsCountChange = new EventEmitter<number>
+  @Output() columnsCountChange = new EventEmitter<number>;
   sort: string = 'default';
   itemsShowCount = 12;
 
