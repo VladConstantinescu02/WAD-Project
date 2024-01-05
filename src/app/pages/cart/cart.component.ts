@@ -24,10 +24,16 @@ export class CartComponent implements OnInit {
     'total',
     'action'
   ];
+
   constructor() { }
 
   ngOnInit(): void {
     this.dataScource = this.cart.items;
+  }
+
+  getTotal(items: Array<CartItem>): number {
+    return items.
+      map((item) => item.price * item.quantity).reduce((prev, current) => prev + current,0)
   }
 
 }
