@@ -13,7 +13,16 @@ export class CartComponent implements OnInit {
     price: 150,
     quantity: 1,
     id: 1
-  }] };
+  },
+  {
+    product: 'http://placekitten.com',
+    name: 'sneakers',
+    price: 150,
+    quantity: 1,
+    id: 2
+  },
+
+] };
 
   dataScource: Array<CartItem> = [];
   displayedColumns: Array<string> = [
